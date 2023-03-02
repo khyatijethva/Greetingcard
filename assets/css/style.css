@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('//db.onlinewebfonts.com/c/1ae9b9868bd3121e932225b140a839a5?family=Verdana');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: #000;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    cursor: pointer;
+}
+p {
+    padding-top: 0;
+    margin-top: 0;
+}
+a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 44px;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 22px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a, button, input, textarea, select, div {
+    outline: none;
+    box-shadow: none;
+}
+
+.white {
+    color: #fff;
+}
+
+/* main css start here */
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 999;
+    background: #fff;
+}
+
+.center-loader {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    max-width: 100px;
+}
+
+.loading.loading--is-loaded {
+    display: none;
+}
+
+
+.drag-img img.dragMob {
+    display: none;
+}
+.drag-img {
+    text-align: right;
+    max-width: 75%;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.drag-img.drag_drop {
+    display: block;
+}
+.drag-img img.drag {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    cursor: pointer;
+}
+
+.envelope::before {
+    background-image: url('../images/envelope_square_back-orange.png');
+}
+.envelope::after {
+    background-image: url('../images/envelope_square_front-orange.png');
+}
+
+.fistula .envelope::before {
+    background-image: url('../images/envelope_square_back-pink.png');
+}
+.fistula .envelope::after {
+    background-image: url('../images/envelope_square_front-pink.png');
+}
+
+.card-side.card-back--inner {
+    background: #fff;
+    padding: 50px;
+}
+
+.front-second {
+    padding: 0;
+    background: #fff;
+    height: 100%;
+}
+
+.front-second img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.front-page {
+    font-size: 28px;
+}
+.front-page h4 {
+    font-weight: 400;
+}
+.front-page h6 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.card-side.card-front--inner {
+    background: #f0835d;
+    padding: 50px;
+}
+
+.card-section {
+    padding: 20px 0;
+}
+
+.back-inner p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.thanks-address {
+    margin-top: 35px;
+}
+
+.thanks-address p {
+    margin: 0;
+    font-size: 18px;
+    text-align: right;
+    font-weight: 400;
+    color: #000;
+}
+
+.back-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-side.card-back--outer {
+    background: #ec5a35;
+    padding: 40px 50px;
+}
+
+.last-logo img {
+    max-width: 200px;
+}
+
+.last-logo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card-end p {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.address-back {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 50px;
+    font-size: 22px;
+}
+
+.address-back a {
+    padding-bottom: 4px;
+    display: block;
+}
+
+.address-back p {
+    margin: 0;
+}
+
+.address-back a.website {
+    color: #fff;
+}
+.gifts-life h2 {
+    padding-bottom: 10px;
+}
+
+section.download-card {
+    padding: 40px 20px 10px;
+    text-align: center;
+}
+section.download-card {
+    text-align: center;
+    padding: 40px 20px 10px;
+}
+.download-text h5 {
+    margin: 0;
+    font-family: "Verdana" , sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+.download-text p {
+    margin: 0;
+    font-size: 15px;
+    font-family: "Verdana" , sans-serif;
+}
+.download-text p a {
+    font-weight: bold;
+}
+.download-btn {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.btn-print {
+    color: #ec5a35;
+    border: 2px solid #ec5a35;
+    padding: 10px 30px;
+    font-weight: 600;
+    display: inline-block;
+    border-radius: 30px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-print:hover{
+    background: #ec5a35;
+    color: #fff;
+}
+ul.social-media {
+    margin-top: 10px;
+}
+ul.social-media li {
+    display: inline-block;
+    padding: 10px 5px;
+    font-size: 20px;
+}
+ul.social-media li a{
+    transition: all 0.3s linear;
+    transform: scale(1);
+    padding: 0 5px;
+}
+ul.social-media li a:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+ul.social-media li a:hover .fa-facebook-f{
+    color: #4267B2;
+}
+ul.social-media li a:hover .fa-link{
+    color: #BA0000;
+}
+.btn-print.fistula-btn {
+    color: #e55c9e;
+    border-color: #e55c9e;
+}
+.btn-print.fistula-btn:hover{
+    background: #e55c9e;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 1500px) {
+    .card-section {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 1299px) {
+    .drag-img {
+        max-width: 100%;
+    }
+    .drag-img img.drag {
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .drag-img img.drag {
+        position: relative;
+        transform: translateY(0);
+        top: 0;
+        right: auto;
+    }
+    .drag-img {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 15px;
+    }
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    .front-page {
+        font-size: 16px;
+    }
+
+    .front-page h6 {
+        font-size: 16px;
+    }
+
+    .card-section {
+        padding: 10px 0;
+        min-height: 100vh;
+    }
+
+    .layout--horizontal .card.is-gesture-enabled .card-side {
+        height: 100%;
+    }
+
+    .card-side.card-front--inner,
+    .card-side.card-back--inner,
+    .card-side.card-back--outer {
+        padding: 30px;
+    }
+
+    .back-inner p {
+        font-size: 14px;
+    }
+
+    .thanks-address {
+        margin-top: 20px;
+    }
+
+    .back-inner .thanks-address p {
+        font-size: 12px;
+    }
+
+    .last-logo img {
+        max-width: 100px;
+    }
+
+    .last-logo {
+        margin-bottom: 15px;
+    }
+
+    .card-end p {
+        font-size: 12px;
+    }
+
+    .address-back {
+        margin-top: 25px;
+        font-size: 12px;
+    }
+    .drag-img {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .drag-img img.dragMob {
+        display: none;
+    }
+    .gifts-life h2 {
+        padding-bottom: 0;
+    }
+    .download-text h5 {
+        font-size: 18px;
+    }
+    .download-text p {
+        font-size: 13px;
+    }
+    section.download-card {
+        padding: 25px 15px 5px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .layout--square .envelope--is-opened::before, .layout--square .envelope--is-opened::after {
+        opacity: 0;
+        -webkit-transform: translate(0, 0) scale(.5);
+        transform: translate(0, 0) scale(.5)
+    }
+
+    .layout--square .envelope--is-opened .card {
+        -webkit-transform: translate(-50%, 12%);
+        transform: translate(-50%, 12%);
+        z-index: 100;
+        height: 100%;
+        padding-top: 0;
+    }
+
+    .layout--horizontal .card.is-gesture-enabled .card-side {
+        min-height: 500px;
+    }
+
+    .layout.layout--horizontal.layout--square.layout--is-ready .card.frame-0 {
+        overflow: hidden;
+    }
+
+    .layout.layout--horizontal.layout--square.layout--is-ready.overflow--visible .card.is-gesture-enabled {
+        overflow: inherit;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 12px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    .card-side.card-front--inner, .card-side.card-back--inner, .card-side.card-back--outer {
+        padding: 25px;
+    }
+
+    .last-logo {
+        margin-bottom: 10px;
+    }
+
+    .card-end p {
+        font-size: 10px;
+    }
+
+    .address-back {
+        font-size: 10px;
+    }
+
+    .layout--horizontal .card.is-gesture-enabled .card-side {
+        min-height: 450px;
+    }
+
+    .front-page {
+        font-size: 14px;
+    }
+
+    .front-page h6 {
+        font-size: 14px;
+    }
+
+    .back-inner p {
+        font-size: 12px;
+    }
+
+    .back-inner .thanks-address p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width:651px) {
+    .layout--square .envelope--is-opened::before, .layout--square .envelope--is-opened::after {
+        -webkit-transform: translateX(-5%) translateY(0);
+        transform: translateX(-5%) translateY(0)
+    }
+
+    .layout--square .envelope--is-opened .card {
+        -webkit-transform: translateX(-42.28395%) translateY(10%) scale(.648);
+        transform: translateX(-42.28395%) translateY(10%) scale(.648);
+        z-index: 100
+    }
+}
